@@ -1,0 +1,73 @@
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background-color: black;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+@media (max-width: 1250px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 850px) {
+  .gallery-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.gallery-item {
+  background-color: white;
+  position: relative; 
+  aspect-ratio: 1 / 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  max-width: 90%;
+  max-height: 90%;
+  padding: 10px;
+}
+
+/* Caption styling */
+.caption {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  color: red; /* White text for contrast */
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 3px; /* Optional: Rounded corners */
+}
+
+.price{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: red; /* White text for contrast */
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 3px; /* Optional: Rounded corners */
+}
+
+.dropdown-menu {
+  position: absolute; /* Position it at the top right */
+  top: 10px; /* Adjust top spacing */
+  right: 10px; /* Align to the right */
+  text-align: right;
+  
+}
+
+.dropdown-menu select {
+  color: red; /* Make text red */
+  padding: 5px;
+  border: 1px solid #000000;
+  background-color: white;
+  cursor: pointer;
+}
