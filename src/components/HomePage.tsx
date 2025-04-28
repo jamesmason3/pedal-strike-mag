@@ -9,6 +9,7 @@ const HomePage = () => {
         <NavButton label="shop" route="/shop" />
         <NavButton label="gallery" route="/gallery" />
         <NavButton label="contact" route="/contact" />
+        <NavButton label="landing" route="/landing" />
       </div>
     </div>
   );

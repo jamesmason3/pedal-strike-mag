@@ -4,6 +4,7 @@ import ContactPage from "./components/ContactPage";
 import GalleryPage from "./components/GalleryPage";
 import ShopPage from "./components/ShopPage";
 import ProductPage from "./components/ProductPage";
+import LandingPage from "./components/LandingPage";
 // import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/products/:productId" element={<ProductPage />} />
         <Route path='/gallery' element={<GalleryPage />} />
         <Route path='/contact' element={<ContactPage />} />
+        <Route path='/landing' element={<LandingPage />} />
       </Routes>
     </Router>
   );
