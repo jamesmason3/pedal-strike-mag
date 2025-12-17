@@ -1,51 +1,23 @@
-# React + TypeScript + Vite
+Pedal Strike Magazine
+This web application was built with React and Typescript as a way to develop my skills in both. It is not deployed yet but can be run locally with the commands below.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 1. Clone the repository
+git clone https://github.com/jamesmason3/pedal-strike-mag.git
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 2. Navigate into the project folder
+cd pedal-strike-mag
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+# 3. Install dependencies
+npm install
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+# 4. Start the server
+npm run dev
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Pedal Strike Magazine currently has a home page, landing, faux shop, image galleries, and a contact page.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-"# pedal-strike-mag" 
+
+In the future I am looking to add a chat room for users to discuss biking. If products are actually made I would like to make the shop page functional with an implemented e-commerce platform.
