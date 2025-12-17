@@ -16,6 +16,7 @@ npm install
 # 4. Start the server
 npm run dev
 
+# 5. Copy local host address into browser
 
 Pedal Strike Magazine currently has a home page, landing, faux shop, image galleries, and a contact page.
 
